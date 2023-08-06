@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	background-image: url("bg.png");
+	background-size: 1600px 710px;
+
+}
+
+.header {
+	
+	top: 0;
+	left: 0;
+	width: 100%;
+	
+	background: transparent;
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+.logo {
+	
+	padding-left: 70px;
+	padding-top: 20px;
+	width: 199px;
+	height: 69px;
+}
+
+.navbar a {
+	display: inline;
+	font-size: 18px;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: 500;
+	margin-left: 70px;
+	transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active{
+	 color: #000000;
+}
+
+.navbar-content {
+	margin-top: 40px;
+	margin-right: 200px;
+
+}
+
+.home {
+	height: 100vh;
+	display: flex;
+	
+}
+
+
+
+
+
+.home-content p {
+	font-size: 16px;
+	color: #FFFFFF;
+	width: 400px;
+	text-align: justify;
+	margin-top: 200px;
+	margin-left: 900px;
+}
+
+.btn-box-signin {
+  background-color: transparent;
+  color: #FFFFFF;
+  padding: 2px 20px;
+  border: 2px solid #FFFFFF;
+  border-radius:15px;
+  cursor: pointer;
+  
+
+}
+
+.Btn-box-signin-align {
+	margin-left: 100px;
+}
+.btn-box-ShowMore {
+	background-color: transparent;
+  color: #FFFFFF;
+  padding: 2px 20px;
+  border: 2px solid #FFFFFF;
+  border-radius:15px;
+  cursor: pointer;
+  
+  
+}
+.Home-BtnBox {
+	margin-top: 100px;
+  margin-left: 1020px;
+}
+
+.Home-BtnBox a{
+	transition: .3s;
+}
+
+.Home-BtnBox a:hover{
+	 color: #000000;
+}
+
+
+.ShowMore-arrow {
+  margin-top: 10px;
+  margin-left: 1070px;
+}
+
+.icon-bar {
+  margin-top: 70px;
+}
+.icon-bar img {
+  float: left;
+  width: 25px;
+  height: 25px;
+  transition: all 0.3s ease;
+  margin-left: 27px;
+}
+
+.icon-bar img:hover {
+  opacity: 0.2;
+}

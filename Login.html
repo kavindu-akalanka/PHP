@@ -12,23 +12,24 @@
     <section>
         <div class="form-box">
             <div class="form-value">
-                <form action="php/login.php" onsubmit="return validateForm()" method="post">
+                <form action="#" onsubmit="return validateForm()" method="post">
                     <h2>Login</h2>
                     <div class="inputbox">
                         <ion-icon name="mail-outline"></ion-icon>
-                        <input type="email" required name="userEmail">
+                        <input type="email" required id="userEmail">
                         <label for="">Email</label>
                     </div>
                     <div class="inputbox">
                         <ion-icon name="lock-closed-outline"></ion-icon>
-                        <input type="password" required name="userPassword">
+                        <input type="password" required id="userPassword">
                         <label for="">password</label>
                     </div>
                     <div class="forget">
                         <label for=""><input type="checkbox">Remember Me? <a href="#"> Forget Password ?</a></label>
                         
                     </div>
-                    <button type="submit" name="login" value="login">Log in</button> 
+                   
+                    <button type="submit" name="login" value="login" ><a href="Forecast.html">Log In </a> </button>
                 </form>
             </div>
         </div>
@@ -36,16 +37,18 @@
 
     <script>
         function validateForm() {
-            var email = document.getElementById("email").value;
-            var password = document.getElementById("password").value;
-
-            // Check if email and password fields are not empty
-            if (email.trim() === "" || password === "") {
-                alert("Please fill out all required fields.");
+            const useremailInput = document.getElementById("userEmail");
+            const passwordInput = document.getElementById("userPassword");
+            
+            const defaultEmailname = "admin@gmail.com"; // Change this to your default username
+            const defaultPassword = "abcd1234"; // Change this to your default password
+            
+            if (useremailInput.value !== defaultEmailname || passwordInput.value !== defaultPassword) {
+                alert("Invalid username or password.");
                 return false;
             }
-
-            return true;
+            
+            return true; // Form will be submitted if credentials are correct
         }
     </script>
 </body>
