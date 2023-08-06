@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login Form</title>
+</head>
+<body>
+    
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form action="php/login.php" onsubmit="return validateForm()" method="post">
+                    <h2>Login</h2>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" required name="userEmail">
+                        <label for="">Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" required name="userPassword">
+                        <label for="">password</label>
+                    </div>
+                    <div class="forget">
+                        <label for=""><input type="checkbox">Remember Me? <a href="#"> Forget Password ?</a></label>
+                        
+                    </div>
+                    <button type="submit" name="login" value="login">Log in</button> 
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function validateForm() {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            // Check if email and password fields are not empty
+            if (email.trim() === "" || password === "") {
+                alert("Please fill out all required fields.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
+</html>
