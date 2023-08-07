@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                dir('desired/workspace/path') { 
+                dir('/var/lib/jenkins/workspace/CICD-Pipeline-@2@tmp') { 
                     echo 'Building the application'
                     sh 'composer install'
                     sh 'npm install'
@@ -21,7 +21,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                dir('desired/workspace/path') {
+                dir('/var/lib/jenkins/workspace/CICD-Pipeline-@2@tmp') {
                     echo 'Running tests'
                     sh 'vendor/bin/phpunit'
                 }
