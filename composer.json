@@ -25,9 +25,9 @@
         "league/commonmark": "^2.0",
         "symfony/dependency-injection": "^5.0"
     },
-   "autoload": {
+  "autoload": {
         "psr-4": {
-            "Acme\\": "src/"
+            "MyNamespace\\": "path/to/php/files"
         }
     }
 }
