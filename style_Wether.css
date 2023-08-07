@@ -187,9 +187,9 @@ h1 {
   }
 
   footer {
-    background-color: black;
+    background-color: #344A48;
     margin-top: 10px;
-    height: 300px;
+    height: 350px;
     color: white;
     text-align: center;
     padding-top: 50px;
@@ -197,3 +197,54 @@ h1 {
     margin-left: 30px;
     margin-right: 30px;
   }
+
+hr {
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.footerContainer,
+.SocialMediaBar {
+	display: flex;
+	margin-left: 30px;
+}
+
+.footerLogo {
+	margin-left: 100px;
+	margin-top: 40px;
+	margin-bottom: 40PX;
+}
+.Flogo {
+	width: 400PX;
+	height: 130PX;
+}
+
+.footerDitail {
+	margin-left: 150px;
+}
+
+.ficon {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.ficon:hover {
+  opacity: 0.2;
+}
+
+.footer {
+	
+	top: 0;
+	left: 0;
+	width: 100%;
+	margin-left: 50px;
+	margin-top: -10px;
+	background: transparent;
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+.Copyright {
+	margin-top: 10px;
+	margin-right: 150px;
+}
